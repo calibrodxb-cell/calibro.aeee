@@ -19,17 +19,13 @@ export default function About() {
       className="scroll-mt-28 rounded-t-[36px] bg-[#f1f1f1] text-black"
     >
       <div className="space-y-8 px-5 py-8 sm:px-8 sm:py-10 lg:space-y-12 lg:px-10 lg:py-12">
-        <div className="grid gap-6 lg:grid-cols-[220px_1fr] lg:gap-10">
+        <div className="grid gap-6 lg:grid-cols-[220px_1fr] lg:gap-50">
           <h2 className="text-[28px] font-black leading-none sm:text-[34px]">
             About
           </h2>
 
-          <p className="max-w-[1200px] text-[18px] font-bold leading-[1.05] sm:text-[22px] lg:text-[32px]">
-            1234567890
-            deliver refined furniture solutions where craftsmanship,
-            materiality, and detail define every piece. From bespoke furniture
-            to complete FF&E concepts, and tailored solutions with lasting
-            value.
+          <p className="max-w-[1200px] text-[18px] font-bold leading-[1.05] sm:text-[22px] lg:text-[24px]">
+            Calibro brings together artistic vision and technical precision to deliver refined furniture solutions where craftsmanship, materiality, and detail define every piece. From bespoke furniture to complete FF&E concepts, and tailored solutions with lasting value.
           </p>
         </div>
 

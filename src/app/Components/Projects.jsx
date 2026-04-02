@@ -11,93 +11,57 @@ const projects = [
   {
     image: "/images/p01.webp",
     brand: "PROJECTS",
-    title: "PRIVATE VILLA",
+    title: "PENTHOUSE PRIMO TOWER, DOWNTOWN",
     description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
-    thumb: "/images/p01.webp",
+      "Located in one of Dubai’s most prestigious addresses, this exceptional residence reflects a seamless blend of luxury, comfort, and contemporary design. Fully furnished with bespoke pieces and thoughtfully tailored layouts, the space is curated in warm, refined tones that enhance both elegance and functionality",
+      thumb: "/images/p01.webp",
+   
   },
   {
     image: "/images/p02.webp",
     brand: "PROJECTS",
-    title: "PRIVATE VILLA",
+    title: "APARTMENT 23, MARINA TOWER",
     description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
+      "In Dubai’s Marina district, 23 Marina Tower is a premier address. This fully furnished apartment combines bespoke furniture, tailored layouts, and warm, refined tones to create an elegant, comfortable, and stylish living space.",
+    
     thumb: "/images/p02.webp",
   },
   {
     image: "/images/p03.webp",
     brand: "PROJECTS",
-    title: "PRIVATE VILLA",
+    title: "ZEN TOWER ROOF DUPLEX APTT.",
     description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
+     "This Zen Tower roof duplex project goes beyond interior design, offering an emotional experience of balance and serenity. The furniture creates a calm, grounding atmosphere that supports relaxation and clarity. Eachpiece is selected for its comfort, functionality, and timeless elegance.",
+   
     thumb: "/images/p03.webp",
   },
   {
     image: "/images/p04.webp",
     brand: "PROJECTS",
-    title: "PRIVATE VILLA",
+    title: "THE EXECUTIVE TOWER",
     description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
+      "A contemporary residence in Dubai’s Business Bay, featuring interiors thoughtfully furnished with elegant, high-quality pieces that enhance the overall sense of modern luxury and refined lifestyle.",
+    
     thumb: "/images/p04.webp",
   },
   {
     image: "/images/p05.webp",
     brand: "PROJECTS",
-    title: "PRIVATE VILLA",
+    title: "ELITE TOWER MARINA",
     description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
+      "This residence features a curated furniture collection that blends contemporary style with everyday comfort. Each piece is carefully selected to complement the interiors, creating a harmonious and inviting space that reflects modern living in Dubai.",
+   
     thumb: "/images/p05.webp",
   },
   {
     image: "/images/p06.webp",
     brand: "PROJECTS",
-    title: "PRIVATE VILLA",
+    title: "AL FATTAN MARINA",
     description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
+      "A signature project in one of Dubai’s most exclusive locations, showcasing luxurious finishes, bespoke design, carefully selected high-end furniture, and an elegant living experience offering a lifestyle that reflects the true meaning of modern luxury.",
     thumb: "/images/p06.webp",
   },
-  {
-    image: "/images/p07.webp",
-    brand: "PROJECTS",
-    title: "PRIVATE VILLA",
-    description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
-    thumb: "/images/p07.webp",
-  },
-  {
-    image: "/images/p08.webp",
-    brand: "PROJECTS",
-    title: "PRIVATE VILLA",
-    description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
-    thumb: "/images/p08.webp",
-  },
-  {
-    image: "/images/p09.webp",
-    brand: "PROJECTS",
-    title: "PRIVATE VILLA",
-    description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
-    thumb: "/images/p09.webp",
-  },
-  {
-    image: "/images/p10.webp",
-    brand: "PROJECTS",
-    title: "PRIVATE VILLA",
-    description:
-      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
-    cta: "VIEW PROJECT",
-    thumb: "/images/p10.webp",
-  },
+  
 ];
 
 export default function Projects() {

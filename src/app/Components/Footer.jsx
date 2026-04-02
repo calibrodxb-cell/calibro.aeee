@@ -42,7 +42,7 @@ export default function Footer() {
 
             <div className="pt-1">
               <p className="max-w-[260px] text-[18px] font-semibold leading-[1.02] sm:text-[12px] lg:text-[16px]">
-                ©Calibro Holding
+                ©Calibro
                 <br />
                 All rights reserved
               </p>
@@ -80,11 +80,11 @@ export default function Footer() {
             <div className="w-full rounded-[12px] bg-[#343434] p-4 sm:p-5 lg:ml-auto lg:max-w-[540px]">
               <div className="space-y-4">
                 <div className="space-y-1">
-                  <h3 className="max-w-[470px] text-[24px] font-bold uppercase leading-[1.02] text-white sm:text-[28px]">
+                  <h3 className="max-w-[470px] text-[20px] font-bold uppercase leading-[1.02] text-white sm:text-[24px]">
                     Join Our Community.
                   </h3>
 
-                  <p className="max-w-[500px] text-[22px] font-bold uppercase leading-[1.02] text-[#6f6f6f] sm:text-[26px]">
+                  <p className="max-w-[500px] text-[18px] font-bold uppercase leading-[1.02] text-[#6f6f6f] sm:text-[20px]">
                     Receive updates from Calibro, from new collaborations to
                     future projects.
                   </p>

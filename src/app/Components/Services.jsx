@@ -72,12 +72,12 @@ export default function Services() {
         <div className="space-y-8 lg:space-y-10">
           
           {/* Top Content */}
-          <div className="grid gap-6 lg:grid-cols-[220px_1fr] lg:gap-10">
-            <h2 className="text-[28px] font-semibold sm:text-[34px]">
+          <div className="grid gap-6 lg:grid-cols-[220px_1fr] lg:gap-40">
+            <h2 className="text-[28px] font-black sm:text-[34px]">
               Services
             </h2>
 
-            <p className="max-w-[1200px] text-[18px] font-semibold leading-[1.05] text-white sm:text-[22px] lg:text-[32px]">
+            <p className="max-w-[1200px] text-[18px] font-bold leading-[1.05] text-white sm:text-[22px] lg:text-[24px]">
               We are with you every step of the process, guiding consultation,
               concept development, selection, and procurement, enriched by access
               to renowned brands and thoughtful curation.
@@ -100,11 +100,11 @@ export default function Services() {
                 <div className="flex h-full min-h-[520px] flex-col rounded-[26px] bg-white/5 p-4 backdrop-blur-sm sm:min-h-[580px] sm:p-5 lg:min-h-[600px]">
                   
                   <div className="flex flex-1 flex-col">
-                    <h3 className="text-[22px] font-semibold leading-tight sm:text-[24px] lg:text-[26px]">
+                    <h3 className="text-[22px] font-bold leading-tight sm:text-[24px] lg:text-[24px] text-[rgb(255,255,255)]">
                       {service.title}
                     </h3>
 
-                    <p className="mt-6 text-[14px] text-white/40 sm:text-[16px] lg:text-[18px]">
+                    <p className="mt-6 font-bold text-[14px] text-white/40 sm:text-[16px] lg:text-[20px]">
                       {service.description}
                     </p>
                   </div>
@@ -115,7 +115,7 @@ export default function Services() {
                       alt={service.title}
                       width={900}
                       height={700}
-                      className="h-[200px] w-full object-cover sm:h-[220px] lg:h-[240px]"
+                      className="h-[200px] w-full object-cover sm:h-[220px] lg:h-[320px]"
                     />
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export default function Services() {
           <div className="flex justify-center pt-4">
             <button
               onClick={handleScrollToContact}
-              className="group flex w-full max-w-[320px] items-center justify-between rounded-full bg-white/10 px-6 py-2 backdrop-blur-md transition hover:scale-[1.02]"
+              className="group flex w-full max-w-[240px] items-center justify-between rounded-full bg-white/10 px-6 py-1 backdrop-blur-md transition hover:scale-[1.02]"
             >
               <span className="text-[13px] font-semibold uppercase text-white">
                 Contact Us
