@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --font-body: "Nunito Sans", sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+html {
+  scroll-behavior: smooth;
+}
+
