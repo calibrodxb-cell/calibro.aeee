@@ -37,7 +37,7 @@ export default function Approach() {
       id="approach"
       className="scroll-mt-28 overflow-hidden bg-[#f1f1f1] pt-6"
     >
-      <div className="rounded-t-[24px] bg-[#2a1708] px-5 py-8 text-white sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+      <div className="rounded-t-[24px] bg-[#2a1708] px-3 py-8 text-white sm:px-3 sm:py-10 lg:px-10 lg:py-12">
         <div className="space-y-8 lg:space-y-10">
           {/* Top Content */}
           <div className="grid gap-6 lg:grid-cols-[220px_1fr] lg:gap-40">
@@ -73,7 +73,7 @@ export default function Approach() {
                     alt={item.title}
                     width={900}
                     height={1100}
-                    className="h-[320px] w-full object-cover sm:h-[420px] lg:h-[620px]"
+                    className="h-[420px] w-full object-cover sm:h-[420px] lg:h-[620px]"
                   />
 
                   {/* Plus Button */}

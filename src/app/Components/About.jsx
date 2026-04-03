@@ -49,7 +49,7 @@ export default function About() {
             alt={`About image ${index + 1}`}
             width={1800}
             height={900}
-            className="h-[260px] w-full object-cover sm:h-[360px] lg:h-[720px]"
+            className="h-[560px] w-full object-cover sm:h-[560px] lg:h-[720px]"
             priority={index === 0}
           />
         </SwiperSlide>
