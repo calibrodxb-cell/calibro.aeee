@@ -1,63 +1,85 @@
-"use client";
-
 import Image from "next/image";
-import About from "./About";
-import Approach from "./Approach";
-import Services from "./Services";
-import Projects from "./Projects";
-import Contact from "./Contact";
+
+const points = [
+  "We coordinate bespoke manufacturing with meticulous precision and unwavering dependability.",
+  "We serve as your single point of accountability from our Dubai showroom to final delivery.",
+  "We translate your vision into a finished reality.",
+];
 
 export default function Body() {
   return (
-    <main className="w-full bg-black text-white">
-      <div className="mx-auto flex w-full max-w-[1920px] flex-col gap-0 pb-5">
-        <section
-          id="home"
-          className="scroll-mt-28 space-y-6 px-4 pb-6 sm:px-6 lg:px-4 lg:pb-8"
-        >
-          <div className="pt-6">
-            <h1 className="mt-16 max-w-[1400px] text-[22px] font-black leading-[1.05] tracking-[-0.01em] sm:text-[28px] lg:text-[32px]">
-              <span className="text-white">FORM. PROPORTION.</span>{" "}
-              <span className="text-white/50">
-                Calibro delivers bespoke furniture and FF&amp;E solutions where
-                every material, proportion and detail is held to the highest
-                standard.
-              </span>
-            </h1>
-          </div>
+    <section className="w-full bg-[#1f2321] px-5 py-16 text-white md:px-10 md:py-24 lg:px-16 xl:px-20">
+      <div className="mx-auto max-w-[1280px]">
+        {/* Main Heading */}
+        <h2 className="max-w-[1100px] text-[34px] font-light leading-[1.18] tracking-[-0.03em] md:text-[54px] lg:text-[60px]">
+          Based in Dubai, we are Calibro—an FF&E procurement partner for
+          architects, interior designers, developers, and private clients across
+          the UAE and the wider GCC
+        </h2>
 
-          <div className="grid gap-4 lg:grid-cols-2 lg:gap-2">
-            <div className="overflow-hidden rounded-[12px] bg-[#111111]">
-              <video
-                className="h-[630px] w-full object-cover sm:h-[630px] lg:h-[630px]"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/videos/video.mp4" type="video/mp4" />
-              </video>
-            </div>
+        {/* Content Grid */}
+        <div className="mt-12 grid gap-12 lg:grid-cols-[1.1fr_0.8fr] lg:items-start">
+          {/* Left Content */}
+          <div>
+            <div className="mb-9 h-[2px] w-full max-w-[580px] bg-white" />
 
-            <div className="overflow-hidden rounded-[12px] bg-[#111111]">
-              <Image
-                src="/images/hero-image.webp"
-                alt="Interior design material inspiration"
-                width={1200}
-                height={1200}
-                priority
-                className="h-[630px] w-full object-cover sm:h-[630px] lg:h-[630px]"
-              />
+            <p className="max-w-[560px] text-[24px] font-light leading-[1.18] tracking-[-0.02em] md:text-[30px]">
+              We source and deliver products from a curated portfolio of
+              international brands—including furniture, bespoke joinery,
+              lighting, accessories, rugs, outdoor collections, and large-format
+              art.
+            </p>
+
+            {/* Points */}
+            <div className="mt-20 grid gap-8 md:grid-cols-3 md:gap-10">
+              {points.map((item, index) => (
+                <div key={index}>
+                  <p className="min-h-[88px] text-[15px] font-semibold leading-[1.15] md:text-[14px] lg:text-[15px]">
+                    {item}
+                  </p>
+
+                  <div className="mt-8 h-[2px] w-full bg-white" />
+                </div>
+              ))}
             </div>
           </div>
-        </section>
 
-        <About />
-        <Approach />
-        <Services />
-        <Projects />
-        <Contact />
+          {/* Image */}
+          <div className="relative h-[360px] w-full overflow-hidden md:h-[460px] lg:h-[465px]">
+            <Image
+              src="/images/body-img1.png"
+              alt="Curated furniture procurement"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        {/* CTA Cards */}
+        <div className="mt-24 grid gap-5 md:grid-cols-2">
+          <div className="flex min-h-[260px] flex-col justify-between bg-[#363636] p-8 md:min-h-[300px] lg:p-10">
+            <h3 className="max-w-[470px] text-[25px] font-light leading-[1.15] tracking-[-0.02em] md:text-[30px]">
+              Share your BOQ moodboard via Whatsapp
+            </h3>
+
+            <button className="mt-12 flex w-fit items-center gap-20 border border-white px-5 py-3 text-[12px] font-medium uppercase tracking-wide transition-all duration-300 hover:bg-white hover:text-[#363636]">
+              Share
+              <span>→</span>
+            </button>
+          </div>
+
+          <div className="flex min-h-[260px] flex-col justify-between bg-[#363636] p-8 md:min-h-[300px] lg:p-10">
+            <h3 className="max-w-[470px] text-[25px] font-light leading-[1.15] tracking-[-0.02em] md:text-[30px]">
+              Book your Dubai Showroom visit
+            </h3>
+
+            <button className="mt-12 flex w-fit items-center gap-16 border border-white px-5 py-3 text-[12px] font-medium uppercase tracking-wide transition-all duration-300 hover:bg-white hover:text-[#363636]">
+              Get In Touch
+              <span>→</span>
+            </button>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
   );
 }

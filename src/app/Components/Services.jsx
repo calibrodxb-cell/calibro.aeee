@@ -70,13 +70,14 @@ export default function Services() {
     >
       <div className="rounded-t-[24px] bg-[#050505] px-5 py-8 text-white sm:px-8 sm:py-10 lg:px-10 lg:py-12">
         <div className="space-y-8 lg:space-y-10">
+          
           {/* Top Content */}
-          <div className="grid gap-6 lg:grid-cols-[220px_1fr] lg:gap-40">
-            <h2 className="text-[28px] font-black sm:text-[34px]">
+          <div className="grid gap-6 lg:grid-cols-[220px_1fr] lg:gap-10">
+            <h2 className="text-[28px] font-semibold sm:text-[34px]">
               Services
             </h2>
 
-            <p className="max-w-[1200px] text-[18px] font-bold leading-[1.05] text-white sm:text-[22px] lg:text-[24px]">
+            <p className="max-w-[1200px] text-[18px] font-semibold leading-[1.05] text-white sm:text-[22px] lg:text-[32px]">
               We are with you every step of the process, guiding consultation,
               concept development, selection, and procurement, enriched by access
               to renowned brands and thoughtful curation.
@@ -86,7 +87,7 @@ export default function Services() {
           {/* Swiper */}
           <Swiper
             spaceBetween={16}
-            slidesPerView={1.05}
+            slidesPerView={1.1}
             breakpoints={{
               640: { slidesPerView: 1.3 },
               768: { slidesPerView: 2.1 },
@@ -97,46 +98,47 @@ export default function Services() {
             {services.map((service) => (
               <SwiperSlide key={service.title}>
                 <div className="flex h-full min-h-[520px] flex-col rounded-[26px] bg-white/5 p-4 backdrop-blur-sm sm:min-h-[580px] sm:p-5 lg:min-h-[600px]">
-                  {/* Title */}
-                  <h3 className="text-[22px] font-bold leading-tight text-white sm:text-[24px] lg:text-[24px]">
-                    {service.title}
-                  </h3>
+                  
+                  <div className="flex flex-1 flex-col">
+                    <h3 className="text-[22px] font-semibold leading-tight sm:text-[24px] lg:text-[26px]">
+                      {service.title}
+                    </h3>
 
-                  {/* Image */}
-                  <div className="mt-8 -mx-2 overflow-hidden rounded-none sm:mx-0 sm:rounded-[18px] sm:mt-6">
+                    <p className="mt-6 text-[14px] text-white/40 sm:text-[16px] lg:text-[18px]">
+                      {service.description}
+                    </p>
+                  </div>
+
+                  <div className="mt-6 overflow-hidden rounded-[18px]">
                     <Image
                       src={service.image}
                       alt={service.title}
                       width={900}
                       height={700}
-                      className="h-[300px] w-full object-cover sm:h-[220px] lg:h-[320px]"
+                      className="h-[200px] w-full object-cover sm:h-[220px] lg:h-[240px]"
                     />
                   </div>
-
-                  {/* Description */}
-                  <p className="mt-4 font-bold text-[14px] text-white/40 sm:mt-6 sm:text-[16px] lg:text-[20px]">
-                    {service.description}
-                  </p>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
-         {/* Contact Button */}
-<div className="flex justify-center pt-4">
-  <button
-    onClick={handleScrollToContact}
-    className="group flex w-full items-center justify-between rounded-full bg-white/10 px-6 py-3 backdrop-blur-md transition hover:scale-[1.02] sm:max-w-[240px]"
-  >
-    <span className="text-[12px] font-semibold uppercase tracking-wide text-white">
-      CONTACT US
-    </span>
+          {/* Contact Button */}
+          <div className="flex justify-center pt-4">
+            <button
+              onClick={handleScrollToContact}
+              className="group flex w-full max-w-[320px] items-center justify-between rounded-full bg-white/10 px-6 py-2 backdrop-blur-md transition hover:scale-[1.02]"
+            >
+              <span className="text-[13px] font-semibold uppercase text-white">
+                Contact Us
+              </span>
 
-    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#5a0a12] transition group-hover:rotate-90">
-      <Plus size={22} />
-    </span>
-  </button>
+              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#6b0814] transition group-hover:rotate-90">
+                <Plus size={26} />
+              </span>
+            </button>
           </div>
+
         </div>
       </div>
     </section>

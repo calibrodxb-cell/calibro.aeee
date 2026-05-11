@@ -11,50 +11,92 @@ const projects = [
   {
     image: "/images/p01.webp",
     brand: "PROJECTS",
-    title: "PENTHOUSE PRIMO TOWER, DOWNTOWN",
+    title: "PRIVATE VILLA",
     description:
-      "Located in one of Dubai’s most prestigious addresses, this exceptional residence reflects a seamless blend of luxury, comfort, and contemporary design. Fully furnished with bespoke pieces and thoughtfully tailored layouts, the space is curated in warm, refined tones that enhance both elegance and functionality",
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
     thumb: "/images/p01.webp",
   },
   {
     image: "/images/p02.webp",
     brand: "PROJECTS",
-    title: "APARTMENT 23, MARINA TOWER",
+    title: "PRIVATE VILLA",
     description:
-      "In Dubai’s Marina district, 23 Marina Tower is a premier address. This fully furnished apartment combines bespoke furniture, tailored layouts, and warm, refined tones to create an elegant, comfortable, and stylish living space.",
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
     thumb: "/images/p02.webp",
   },
   {
     image: "/images/p03.webp",
     brand: "PROJECTS",
-    title: "ZEN TOWER ROOF DUPLEX APTT.",
+    title: "PRIVATE VILLA",
     description:
-      "This Zen Tower roof duplex project goes beyond interior design, offering an emotional experience of balance and serenity. The furniture creates a calm, grounding atmosphere that supports relaxation and clarity. Eachpiece is selected for its comfort, functionality, and timeless elegance.",
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
     thumb: "/images/p03.webp",
   },
   {
     image: "/images/p04.webp",
     brand: "PROJECTS",
-    title: "THE EXECUTIVE TOWER",
+    title: "PRIVATE VILLA",
     description:
-      "A contemporary residence in Dubai’s Business Bay, featuring interiors thoughtfully furnished with elegant, high-quality pieces that enhance the overall sense of modern luxury and refined lifestyle.",
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
     thumb: "/images/p04.webp",
   },
   {
     image: "/images/p05.webp",
     brand: "PROJECTS",
-    title: "ELITE TOWER MARINA",
+    title: "PRIVATE VILLA",
     description:
-      "This residence features a curated furniture collection that blends contemporary style with everyday comfort. Each piece is carefully selected to complement the interiors, creating a harmonious and inviting space that reflects modern living in Dubai.",
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
     thumb: "/images/p05.webp",
   },
   {
     image: "/images/p06.webp",
     brand: "PROJECTS",
-    title: "AL FATTAN MARINA",
+    title: "PRIVATE VILLA",
     description:
-      "A signature project in one of Dubai’s most exclusive locations, showcasing luxurious finishes, bespoke design, carefully selected high-end furniture, and an elegant living experience offering a lifestyle that reflects the true meaning of modern luxury.",
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
     thumb: "/images/p06.webp",
+  },
+  {
+    image: "/images/p07.webp",
+    brand: "PROJECTS",
+    title: "PRIVATE VILLA",
+    description:
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
+    thumb: "/images/p07.webp",
+  },
+  {
+    image: "/images/p08.webp",
+    brand: "PROJECTS",
+    title: "PRIVATE VILLA",
+    description:
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
+    thumb: "/images/p08.webp",
+  },
+  {
+    image: "/images/p09.webp",
+    brand: "PROJECTS",
+    title: "PRIVATE VILLA",
+    description:
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
+    thumb: "/images/p09.webp",
+  },
+  {
+    image: "/images/p10.webp",
+    brand: "PROJECTS",
+    title: "PRIVATE VILLA",
+    description:
+      "Mansion 05\nLocation: Dubai, UAE\nBrands: Cassina, Rimadesio\nArchitect: Unica Architects",
+    cta: "VIEW PROJECT",
+    thumb: "/images/p10.webp",
   },
 ];
 
@@ -69,11 +111,11 @@ export default function Projects() {
           Selected Projects
         </h2>
 
-        <div className="-mx-4">
+        <div className="-mx-6">
           <Swiper
             modules={[Pagination]}
             spaceBetween={18}
-            slidesPerView={1.1}
+            slidesPerView={1}
             pagination={{
               clickable: true,
             }}
@@ -81,18 +123,18 @@ export default function Projects() {
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index}>
-                <div className="relative overflow-hidden rounded-[16px] sm:rounded-[16px] lg:rounded-[24px] bg-[#d9d9d9]">
+                <div className="relative overflow-hidden rounded-[24px] bg-[#d9d9d9]">
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={1800}
                     height={1000}
-                    className="h-[460px] w-full object-cover sm:h-[520px] lg:h-[1020px]"
+                    className="h-[260px] w-full object-cover sm:h-[420px] lg:h-[600px]"
                     priority={index === 0}
                   />
 
                   {/* Transparent Info Card */}
-                  <div className="absolute bottom-4 right-4 z-20 hidden max-w-[85%] rounded-[18px] border border-white/10 bg-black/25 p-3 text-white backdrop-blur-md sm:block sm:bottom-5 sm:right-5 sm:max-w-[380px] sm:p-4 lg:bottom-6 lg:right-6 lg:max-w-[420px] lg:p-5">
+                  <div className="absolute bottom-4 right-4 z-20 max-w-[85%] rounded-[18px] border border-white/10 bg-black/25 p-3 text-white backdrop-blur-md sm:bottom-5 sm:right-5 sm:max-w-[380px] sm:p-4 lg:bottom-6 lg:right-6 lg:max-w-[420px] lg:p-5">
                     <div className="flex items-start gap-3">
                       <div className="hidden overflow-hidden rounded-[10px] sm:block">
                         <Image
@@ -161,7 +203,9 @@ export default function Projects() {
 
           @media (max-width: 640px) {
             .project-main-swiper .swiper-pagination {
-              display: none !important;
+              bottom: 12px !important;
+              gap: 8px;
+              padding: 8px 14px;
             }
 
             .project-main-swiper .swiper-pagination-bullet {

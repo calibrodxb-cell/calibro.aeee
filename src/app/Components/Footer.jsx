@@ -1,119 +1,152 @@
-"use client";
-
 import Image from "next/image";
-import Link from "next/link";
-
-const policyLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Use", href: "#" },
-  { label: "Cookie Policy", href: "#" },
-  { label: "Cookie Preferences", href: "#" },
-];
 
 export default function Footer() {
+  const exploreLinks = [
+    "Home",
+    "Our Factory",
+    "Projects",
+    "Calibro Art",
+    "About",
+  ];
+
+  const legalLinks = [
+    "Terms & Conditions",
+    "Privacy Policy",
+  ];
+
   return (
-    <footer className="bg-black text-[#5f5f5f]">
-      <div className="mx-auto max-w-[1920px] px-4 pb-8 pt-12 sm:px-6 lg:px-10 lg:pb-10 lg:pt-12">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_1fr_0.9fr_1.6fr] lg:items-end lg:gap-8">
-          {/* Left Block */}
-          <div className="space-y-5">
-            <div className="space-y-3">
-              <p className="text-[13px] font-semibold uppercase tracking-tight text-white sm:text-[15px]">
-                A Calibro Company
+    <footer className="bg-[#1f2321] px-5 py-10 text-white md:px-10 lg:px-16 xl:px-20">
+      <div className="mx-auto max-w-[1280px]">
+        <div className="h-[2px] w-full bg-white" />
+
+        <div className="grid gap-14 py-14 lg:grid-cols-3 lg:gap-20">
+          {/* Left Column */}
+          <div className="flex flex-col justify-between gap-16">
+            <div>
+              <h3 className="text-[22px] font-light">Newsletter</h3>
+
+              <p className="mt-5 max-w-[300px] text-[14px] font-semibold leading-[1.15]">
+                Subscribe for project highlights, new brand partnerships,
+                artist collaborations, and Dubai showroom updates.
               </p>
 
-              <div className="w-fit">
-                <Image
-                  src="/images/logo-w.svg"
-                  alt="Calibro"
-                  width={260}
-                  height={80}
-                  className="h-auto w-[180px] sm:w-[220px] lg:w-[250px]"
-                />
-              </div>
+              <button className="mt-7 flex w-fit items-center gap-10 border border-white px-4 py-3 text-[12px] font-bold uppercase transition-all duration-300 hover:bg-white hover:text-[#1f2321]">
+                Join our newsletter <span>→</span>
+              </button>
             </div>
 
-            <button
-              type="button"
-              className="min-h-[48px] rounded-xl bg-[#343434] px-7 py-4 text-[13px] font-semibold uppercase text-white transition-all duration-300 hover:opacity-80 sm:min-h-[56px] sm:px-10"
-            >
-              More About Us
-            </button>
-
-            <div className="pt-1">
-              <p className="max-w-[260px] text-[18px] font-semibold leading-[1.02] sm:text-[12px] lg:text-[16px]">
-                ©Calibro
-                <br />
-                All rights reserved
-              </p>
-            </div>
+            <Image
+              src="/images/logo-w.png"
+              alt="Calibro Logo"
+              width={240}
+              height={80}
+              className="h-auto w-[160px] object-contain md:w-[210px]"
+            />
           </div>
 
-          {/* Address */}
-          <div>
-            <p className="max-w-[360px] text-[18px] font-semibold leading-[1.02] sm:text-[12px] lg:text-[16px]">
-              
-              <br />
-              
-              <br />
-              
-              <br />
-              Dubai, UAE
-            </p>
-          </div>
+          {/* Middle Column */}
+          <div className="lg:pl-10">
+            <h4 className="mb-6 text-[12px] font-bold uppercase">
+              Explore
+            </h4>
 
-          {/* Policy Links */}
-          <div className="grid grid-cols-1 gap-1 lg:gap-0">
-            {policyLinks.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="text-[18px] font-semibold leading-[1.02] transition-opacity duration-300 hover:opacity-70 sm:text-[12px] lg:text-[16px]"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <div className="w-full rounded-[12px] bg-[#343434] p-4 sm:p-5 lg:ml-auto lg:max-w-[540px]">
-              <div className="space-y-4">
-                <div className="space-y-1">
-                  <h3 className="max-w-[470px] text-[20px] font-bold uppercase leading-[1.02] text-white sm:text-[24px]">
-                    Join Our Community.
-                  </h3>
-
-                  <p className="max-w-[500px] text-[18px] font-bold uppercase leading-[1.02] text-[#6f6f6f] sm:text-[20px]">
-                    Receive updates from Calibro, from new collaborations to
-                    future projects.
-                  </p>
-                </div>
-
-                <form className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                  <input
-                    type="email"
-                    placeholder="EMAIL"
-                    className="h-[52px] w-full rounded-[10px] border border-[#7a7a7a] bg-transparent px-4 text-[14px] font-semibold uppercase text-white outline-none placeholder:text-[#9a9a9a] sm:h-[54px]"
-                  />
-
-                  <button
-                    type="submit"
-                    className="h-[52px] rounded-[10px] bg-black px-6 text-[14px] font-semibold uppercase text-white transition-opacity duration-300 hover:opacity-80 sm:h-[54px] sm:min-w-[134px]"
+            <ul className="space-y-4">
+              {exploreLinks.map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase().replaceAll(" ", "-")}`}
+                    className="text-[24px] font-light transition-all duration-300 hover:text-white/60"
                   >
-                    Submit
-                  </button>
-                </form>
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                <p className="text-[13px] font-semibold leading-[1.15] text-[#8d8d8d] sm:text-[14px]">
-                  By subscribing, you agree to our Privacy Policy and provide
-                  consent to receive updates from our company. You can withdraw
-                  your consent at any time by following the unsubscribe
-                  instructions in any email we send to you.
-                </p>
-              </div>
+          {/* Right Column */}
+          <div className="flex flex-col gap-10">
+            {/* Legal */}
+            <div>
+              <h4 className="mb-6 text-[12px] font-bold uppercase">
+                Legal
+              </h4>
+
+              <ul className="space-y-3">
+                {legalLinks.map((item) => (
+                  <li key={item}>
+                    <a
+                      href="#"
+                      className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="mb-6 text-[12px] font-bold uppercase">
+                Contact
+              </h4>
+
+              <ul className="space-y-4 text-[14px] font-semibold">
+                <li>
+                  <a
+                    href="tel:+971501234567"
+                    className="transition-all duration-300 hover:text-white/60"
+                  >
+                    +971 58 604 5588
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="mailto:info@calibro.ae"
+                    className="transition-all duration-300 hover:text-white/60"
+                  >
+                    info@calibro.ae
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Social */}
+            <div>
+              <h4 className="mb-6 text-[12px] font-bold uppercase">
+                Follow Us
+              </h4>
+
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
+                  >
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+
+        <div className="h-[2px] w-full bg-white" />
+
+        <div className="flex flex-col gap-4 py-8 text-[13px] font-semibold uppercase md:flex-row md:justify-between">
+          <p>1, Jebel Ali Industrial Area, 47th Street, Dubai, United Arab Emirates</p>
+          <p>2026 Calibro Trading L.L.C. All rights reserved</p>
         </div>
       </div>
     </footer>
