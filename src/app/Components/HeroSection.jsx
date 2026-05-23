@@ -56,10 +56,10 @@ export default function HeroSection() {
       <div className="relative z-10 flex h-full w-full flex-col justify-end px-5 pb-10 md:px-10 md:pb-16 lg:px-24 lg:pb-20">
         <div className="flex w-full flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           {/* Heading */}
-          <h1 className="max-w-[900px] text-[64px] font-light leading-[0.92] tracking-[-0.06em] text-white md:text-[110px] lg:text-[120px] xl:text-[150px]">
-            Curated
+          <h1 className="max-w-[900px] text-[64px] font-light leading-[0.92] tracking-[-0.06em] text-white md:text-[100px] lg:text-[100px] xl:text-[70px]">
+            RESPECT <br />PROPOTIONS &
             <br />
-            Excellence
+            FORM.
           </h1>
 
           {/* Right Label Desktop */}

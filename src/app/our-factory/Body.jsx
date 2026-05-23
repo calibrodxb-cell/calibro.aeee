@@ -2,33 +2,35 @@ import Image from "next/image";
 
 const serviceItems = [
   {
-    title: "Sourcing",
-    text: "We source from global brands and coordinate bespoke, one-off or stock requirements.",
+    title: "Raw Material Sourcing",
+    image: "/images/raw-material.png",
   },
   {
-    title: "Pricing & POs",
-    text: "Transparent pricing, detailed quotes, and accurate purchase order management.",
+    title: "Woodworks & Joinery",
+    image: "/images/woodworks.png",
   },
   {
-    title: "Validation",
-    text: "Physical sampling and final material sign-off managed before production.",
+    title: "Metalworks & Fabrication",
+    image: "/images/metalworks.png",
   },
   {
-    title: "Production",
-    text: "Manufacturing status, factory updates, and timeline control across every item.",
+    title: "Upholstery & Soft Furnishings",
+    image: "/images/upholstery.png",
   },
   {
-    title: "Logistics",
-    text: "Global coordination, customs clearance, and precise site delivery across the GCC.",
+    title: "Custom Finishing",
+    image: "/images/custom-finishing.png",
   },
-  {
-    title: "Assembly",
-    text: "Installation instructions, assembly, and site handover coordination.",
-  },
-  {
-    title: "Warranty",
-    text: "Defect reporting, supplier follow-up, and rectification management.",
-  },
+];
+
+const processItems = [
+  "Brief & Design.",
+  "Material Sourcing.",
+  "Cutting & Preparation.",
+  "Manufacturing & Assembly.",
+  "Finishing & Coating.",
+  "Quality Control.",
+  "Delivery & Installation",
 ];
 
 export default function Body() {
@@ -47,17 +49,16 @@ export default function Body() {
               From brief to aftercare
             </h2>
 
-            <p className="mt-8 max-w-[390px] text-[15px] leading-[1.4] text-white/85">
-              Whether you are specifying for a luxury hotel, a corporate office,
-              a residential villa, or a mixed-use development, we manage every
-              phase of FF&E procurement with transparency, precision, and
-              single-point accountability.
+            <p className="mt-8 max-w-[390px] text-[15px] leading-[1.4] text-white/85 uppercase">
+              Our capabilities span the entire production spectrum from
+              woodworks and joinery to metalworks and upholstery all under one
+              roof.
             </p>
 
             <div className="relative mt-14 h-[300px] w-full overflow-hidden md:h-[380px] lg:max-w-[410px]">
               <Image
                 src="/images/factory-3.png"
-                alt=""
+                alt="Factory"
                 fill
                 className="object-cover"
               />
@@ -68,10 +69,18 @@ export default function Body() {
           <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {serviceItems.map((item) => (
               <div key={item.title} className="border-t border-white pt-5">
-                <h3 className="text-[18px] font-light">{item.title}</h3>
-                <p className="mt-5 text-[13px] leading-[1.4] text-white/80">
-                  {item.text}
-                </p>
+                <h3 className="text-[18px] font-light leading-tight">
+                  {item.title}
+                </h3>
+
+                <div className="relative mt-6 h-[170px] w-full overflow-hidden md:h-[190px]">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition duration-500 hover:scale-105"
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -84,7 +93,7 @@ export default function Body() {
           <div className="relative h-[360px] w-full overflow-hidden md:h-[620px]">
             <Image
               src="/images/factory-4.png"
-              alt=""
+              alt="Factory Interior"
               fill
               className="object-cover"
             />
@@ -100,18 +109,26 @@ export default function Body() {
               How it works
             </p>
 
-            <h2 className="text-[40px] font-light uppercase leading-[0.95] tracking-[-0.04em] md:text-[54px]">
-              Execution Process
+            <h2 className="text-[40px] font-light uppercase leading-[0.95] tracking-[-0.04em] md:text-[45px]">
+              Process Flow
             </h2>
           </div>
 
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-              <div key={num} className="border-b border-white pb-6">
-                <span className="text-[64px] font-light">{num}</span>
-                <p className="mt-4 text-[13px] text-white/80">
-                  Process description here for step {num}.
-                </p>
+            {processItems.map((text, index) => (
+              <div
+                key={index}
+                className="flex min-h-[220px] flex-col justify-between border-b border-white pb-6"
+              >
+                <div>
+                  <span className="text-[64px] font-light">
+                    {index + 1}
+                  </span>
+
+                  <p className="mt-4 text-[13px] leading-[1.5] text-white/80">
+                    {text}
+                  </p>
+                </div>
               </div>
             ))}
 
@@ -132,9 +149,9 @@ export default function Body() {
       <section className="relative h-[420px] w-full overflow-hidden md:h-[600px]">
         <Image
           src="/images/factory-1.png"
-          alt=""
+          alt="Factory"
           fill
-          className="object-cover"
+          className="scale-x-[-1] object-cover"
         />
       </section>
 
@@ -164,7 +181,8 @@ export default function Body() {
             ].map((item) => (
               <div key={item} className="border-t border-white pt-5">
                 <h3 className="text-[15px] font-light">{item}</h3>
-                <p className="mt-4 text-[12px] text-white/80">
+
+                <p className="mt-4 text-[12px] leading-[1.5] text-white/80">
                   Supporting content goes here.
                 </p>
               </div>
@@ -180,9 +198,10 @@ export default function Body() {
             Partnerships built on trust, precision, and shared vision
           </h2>
 
-          <p className="mt-6 max-w-[700px] text-[15px] text-white/85">
+          <p className="mt-6 max-w-[700px] text-[15px] leading-[1.6] text-white/85">
             We work closely with architects and interior designers across
-            multiple sectors.
+            multiple sectors, delivering dependable execution, transparent
+            communication, and refined craftsmanship from concept to completion.
           </p>
         </div>
       </section>
