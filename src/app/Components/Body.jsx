@@ -24,9 +24,9 @@ export default function Body() {
           {/* Main Heading */}
           <h2 className="max-w-[1100px] text-[20px] font-light leading-[1.18] tracking-[-0.03em] md:text-[36px] lg:text-[40px]">
             WE ARE CALIBRO, A CUSTOM FURNITURE FACTORY
-PARTNER FOR ARCHITECTS, INTERIOR DESIGNERS,
-DEVELOPERS, AND PRIVATE CLIENTS IN THE UAE
-AND THROUGHTOUT THE GCC
+            PARTNER FOR ARCHITECTS, INTERIOR DESIGNERS,
+            DEVELOPERS, AND PRIVATE CLIENTS IN THE UAE
+            AND THROUGHTOUT THE GCC
           </h2>
 
           {/* Content Grid */}
@@ -37,9 +37,9 @@ AND THROUGHTOUT THE GCC
 
               <p className="max-w-[560px] text-[24px] font-light leading-[1.18] tracking-[-0.02em] md:text-[20px]">
                 WE MANUFACTURE AND DELIVER PRODUCTS FROM OUR
-DEDICATED FURNITURE FACTORY—INCLUDING CUSTOMMADE PIECES, BESPOKE JOINERY, HANDCRAFTED TABLES,
-STATEMENT SEATING, UPHOLSTERY, STORAGE SOLUTIONS,
-AND LARGE-SCALE PRODUCTION.
+                DEDICATED FURNITURE FACTORY—INCLUDING CUSTOMMADE PIECES, BESPOKE JOINERY, HANDCRAFTED TABLES,
+                STATEMENT SEATING, UPHOLSTERY, STORAGE SOLUTIONS,
+                AND LARGE-SCALE PRODUCTION.
               </p>
 
               {/* Points */}

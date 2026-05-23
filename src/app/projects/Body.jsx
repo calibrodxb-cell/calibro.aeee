@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import GetInTouch from "@/app/components/GetInTouch";
 
 const filters = ["All", "Hospitality", "Residential", "Commercial"];
 
@@ -37,6 +41,8 @@ const projects = [
 ];
 
 export default function Body() {
+  const [contactOpen, setContactOpen] = useState(false);
+
   return (
     <main className="bg-[#1f2321] text-white">
       {/* Filters */}
@@ -75,6 +81,7 @@ export default function Body() {
               <p className="text-[12px] font-semibold uppercase tracking-[0.15em] text-white/70">
                 Hospitality
               </p>
+
               <h2 className="mt-2 text-[28px] font-semibold md:text-[42px]">
                 Signature Luxury Resort
               </h2>
@@ -118,30 +125,43 @@ export default function Body() {
       {/* CTA Section */}
       <section className="px-5 pb-20 md:px-10 lg:px-16 xl:px-20">
         <div className="mx-auto grid max-w-[1280px] gap-6 md:grid-cols-2">
+          {/* Left Card */}
           <div className="bg-[#2a2e2c] p-8">
-            <h3 className="text-[24px] font-light">Have a project in mind?</h3>
+            <h3 className="text-[24px] font-light">
+              Have a project in mind?
+            </h3>
 
-            <Link
-              href="/contact"
+            <a
+              href="https://wa.me/971586045588?text=Hello%20CALIBRO%20team%2C%20I%20would%20like%20to%20discuss%20a%20project."
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-block border border-white px-5 py-3 text-[12px] uppercase transition hover:bg-white hover:text-[#1f2321]"
             >
               Get in touch →
-            </Link>
+            </a>
           </div>
 
+          {/* Right Card */}
           <div className="bg-[#2a2e2c] p-8">
             <h3 className="text-[24px] font-light">
               Explore our procurement process
             </h3>
 
-            <Link
-              href="/procurement"
+            <button
+              type="button"
+              onClick={() => setContactOpen(true)}
               className="mt-8 inline-block border border-white px-5 py-3 text-[12px] uppercase transition hover:bg-white hover:text-[#1f2321]"
             >
               Learn more →
-            </Link>
+            </button>
           </div>
         </div>
+
+        {/* Contact Popup */}
+        <GetInTouch
+          open={contactOpen}
+          onClose={() => setContactOpen(false)}
+        />
       </section>
     </main>
   );

@@ -8,8 +8,7 @@ import GetInTouch from "./GetInTouch";
 
 const navItems = [
   { label: "OUR FACTORY", href: "/our-factory" },
-  { label: "PROJECTS", href: "/projects" },
-  { label: "CALIBRO ART", href: "/calibro-art" },
+  { label: "SERVICES", href: "/services" },
   { label: "ABOUT", href: "/about" },
 ];
 
@@ -105,7 +104,7 @@ export default function Navbar() {
                 width={260}
                 height={90}
                 priority
-                className="h-auto w-[100px] object-contain md:w-[100px] lg:w-[100px]"
+                className="h-auto w-[90px] md:w-[100px] lg:w-[110px] xl:w-[120px]"
               />
             </button>
 
@@ -115,7 +114,7 @@ export default function Navbar() {
                   key={item.label}
                   type="button"
                   onClick={() => handleScrollToSection(item.href)}
-                  className={`cursor-pointer text-[12px] font-bold uppercase tracking-wide transition-all duration-300 xl:text-[12px] ${
+                  className={`cursor-pointer text-[10px] md:text-[11px] lg:text-[11px] xl:text-[12px] uppercase tracking-wide transition-all duration-300 ${
                     scrolled
                       ? "text-[#363443] hover:text-[#363443]/60"
                       : "text-white hover:text-white/70"
@@ -129,7 +128,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={handleContactOpen}
-              className={`hidden cursor-pointer border px-6 py-1 text-[12px] font-bold uppercase tracking-[0.12em] transition-all duration-300 lg:block xl:px-6 ${
+              className={`hidden cursor-pointer border px-6 py-1 text-[10px] md:text-[11px] lg:block lg:text-[11px] xl:text-[12px] uppercase tracking-[0.12em] transition-all duration-300 xl:px-6 ${
                 scrolled
                   ? "border-[#363443] text-[#363443] hover:bg-[#363443] hover:text-white"
                   : "border-white/80 text-white hover:bg-white hover:text-[#363443]"
@@ -140,7 +139,7 @@ export default function Navbar() {
 
             <div className="flex items-center gap-4 lg:hidden">
               <span
-                className={`text-[12px] font-medium uppercase tracking-[0.24em] transition-all duration-300 ${
+                className={`text-[10px] sm:text-[11px] md:text-[12px] font-medium uppercase tracking-[0.24em] transition-all duration-300 ${
                   scrolled ? "text-[#363443]" : "text-white"
                 }`}
               >
@@ -176,7 +175,7 @@ export default function Navbar() {
                     key={item.label}
                     type="button"
                     onClick={() => handleScrollToSection(item.href)}
-                    className={`cursor-pointer text-left text-sm font-semibold uppercase tracking-[0.18em] transition-all duration-300 ${
+                    className={`cursor-pointer text-left text-[12px] sm:text-[13px] md:text-[14px] font-semibold uppercase tracking-[0.18em] transition-all duration-300 ${
                       scrolled
                         ? "text-[#363443] hover:text-[#363443]/60"
                         : "text-white hover:text-white/70"
@@ -189,7 +188,7 @@ export default function Navbar() {
                 <button
                   type="button"
                   onClick={handleContactOpen}
-                  className={`mt-3 cursor-pointer border px-5 py-4 text-left text-sm font-bold uppercase tracking-[0.18em] transition-all duration-300 ${
+                  className={`mt-3 cursor-pointer border px-5 py-4 text-left text-[16px] sm:text-[13px] md:text-[14px] uppercase tracking-[0.18em] transition-all duration-300 ${
                     scrolled
                       ? "border-[#363443] text-[#363443] hover:bg-[#363443] hover:text-white"
                       : "border-white/60 text-white hover:bg-white hover:text-[#363443]"

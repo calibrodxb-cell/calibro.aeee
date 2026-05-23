@@ -1,6 +1,5 @@
 import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
-import Projects from "./Components/Projects";
 import Body from "./Components/Body";
 
 
@@ -17,8 +16,6 @@ export default function Home() {
         
          <div className="bg-[#f5ede5]">
           <HeroSection />
-          <Projects />
-          
           <Body />
       
           

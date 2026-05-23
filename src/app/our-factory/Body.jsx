@@ -3,23 +3,23 @@ import Image from "next/image";
 const serviceItems = [
   {
     title: "Raw Material Sourcing",
-    image: "/images/raw-material.png",
+    image: "/images/of1.png",
   },
   {
     title: "Woodworks & Joinery",
-    image: "/images/woodworks.png",
+    image: "/images/of2.png",
   },
   {
     title: "Metalworks & Fabrication",
-    image: "/images/metalworks.png",
+    image: "/images/of3.png",
   },
   {
-    title: "Upholstery & Soft Furnishings",
-    image: "/images/upholstery.png",
+    title: "Upholstery & Soft Furnishing",
+    image: "/images/of4.png",
   },
   {
     title: "Custom Finishing",
-    image: "/images/custom-finishing.png",
+    image: "/images/of5.png",
   },
 ];
 
@@ -66,14 +66,16 @@ export default function Body() {
           </div>
 
           {/* Right */}
-          <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {serviceItems.map((item) => (
               <div key={item.title} className="border-t border-white pt-5">
-                <h3 className="text-[18px] font-light leading-tight">
+                {/* Title */}
+                <h3 className="min-h-[58px] text-[18px] font-light leading-tight">
                   {item.title}
                 </h3>
 
-                <div className="relative mt-6 h-[170px] w-full overflow-hidden md:h-[190px]">
+                {/* Image */}
+                <div className="relative mt-5 h-[190px] w-full overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
