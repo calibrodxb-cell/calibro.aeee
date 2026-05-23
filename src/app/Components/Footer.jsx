@@ -1,17 +1,39 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const exploreLinks = [
-    "Home",
-    "Our Factory",
-    "Projects",
-    "Calibro Art",
-    "About",
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Our Factory",
+      href: "/our-factory",
+    },
+    {
+      name: "Projects",
+      href: "/projects",
+    },
+    {
+      name: "Calibro Art",
+      href: "/calibro-art",
+    },
+    {
+      name: "About",
+      href: "/about",
+    },
   ];
 
   const legalLinks = [
-    "Terms & Conditions",
-    "Privacy Policy",
+    {
+      name: "Terms & Conditions",
+      href: "/terms-conditions",
+    },
+    {
+      name: "Privacy Policy",
+      href: "/privacy-policy",
+    },
   ];
 
   return (
@@ -52,13 +74,13 @@ export default function Footer() {
 
             <ul className="space-y-4">
               {exploreLinks.map((item) => (
-                <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase().replaceAll(" ", "-")}`}
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
                     className="text-[24px] font-light transition-all duration-300 hover:text-white/60"
                   >
-                    {item}
-                  </a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -74,13 +96,13 @@ export default function Footer() {
 
               <ul className="space-y-3">
                 {legalLinks.map((item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
                       className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
                     >
-                      {item}
-                    </a>
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -95,7 +117,7 @@ export default function Footer() {
               <ul className="space-y-4 text-[14px] font-semibold">
                 <li>
                   <a
-                    href="tel:+971501234567"
+                    href="tel:+971586045588"
                     className="transition-all duration-300 hover:text-white/60"
                   >
                     +971 58 604 5588
@@ -122,7 +144,9 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="#"
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
                   >
                     Instagram
@@ -131,7 +155,9 @@ export default function Footer() {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
                   >
                     LinkedIn
@@ -145,8 +171,13 @@ export default function Footer() {
         <div className="h-[2px] w-full bg-white" />
 
         <div className="flex flex-col gap-4 py-8 text-[13px] font-semibold uppercase md:flex-row md:justify-between">
-          <p>1, Jebel Ali Industrial Area, 47th Street, Dubai, United Arab Emirates</p>
-          <p>2026 Calibro Trading L.L.C. All rights reserved</p>
+          <p>
+            1, Jebel Ali Industrial Area, 47th Street, Dubai, United Arab Emirates
+          </p>
+
+          <p>
+            2026 Calibro Trading L.L.C. All rights reserved
+          </p>
         </div>
       </div>
     </footer>

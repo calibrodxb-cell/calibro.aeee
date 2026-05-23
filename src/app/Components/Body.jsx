@@ -47,7 +47,7 @@ export default function Body() {
           {/* Image */}
           <div className="relative h-[360px] w-full overflow-hidden md:h-[460px] lg:h-[465px]">
             <Image
-              src="/images/body-img1.png"
+              src="/images/about-us.png"
               alt="Curated furniture procurement"
               fill
               className="object-cover"

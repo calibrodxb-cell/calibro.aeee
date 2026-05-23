@@ -4,11 +4,15 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const heroImages = [
-  "/images/hero-img1.webp",
-  "/images/hero-img2.webp",
-  "/images/hero-img3.webp",
-  "/images/hero-img4.webp",
-  "/images/hero-img5.webp",
+  "/images/hero-sec-3.png",
+  "/images/hero-sec-7.jpg",
+  "/images/hero-sec-2.png",
+  "/images/hero-sec-4.png",
+  "/images/hero-sec-5.png",
+  "/images/hero-sec-6.webp",
+  "/images/hero-sec-1.png",
+  
+  
 ];
 
 export default function HeroSection() {

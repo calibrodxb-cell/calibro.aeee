@@ -56,7 +56,7 @@ export default function Body() {
 
             <div className="relative mt-14 h-[300px] w-full overflow-hidden md:h-[380px] lg:max-w-[410px]">
               <Image
-                src="/images/11.webp"
+                src="/images/factory-3.png"
                 alt=""
                 fill
                 className="object-cover"
@@ -83,7 +83,7 @@ export default function Body() {
         <div className="mx-auto max-w-[1280px]">
           <div className="relative h-[360px] w-full overflow-hidden md:h-[620px]">
             <Image
-              src="/images/12.webp"
+              src="/images/factory-4.png"
               alt=""
               fill
               className="object-cover"
@@ -131,7 +131,7 @@ export default function Body() {
       {/* Image */}
       <section className="relative h-[420px] w-full overflow-hidden md:h-[600px]">
         <Image
-          src="/images/13.webp"
+          src="/images/factory-1.png"
           alt=""
           fill
           className="object-cover"

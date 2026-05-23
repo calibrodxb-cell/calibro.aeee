@@ -7,7 +7,7 @@ export default function HeroSection() {
       className="relative h-screen min-h-[650px] w-full overflow-hidden bg-[#1f2321] md:min-h-[720px]"
     >
       <Image
-        src="/images/10.webp"
+        src="/images/factory-2.png"
         alt="Our Factory with impact"
         fill
         priority
