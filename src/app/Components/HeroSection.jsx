@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-screen min-h-[720px] w-full overflow-hidden bg-black md:min-h-[720px]"
+      className="relative h-screen min-h-[600px] w-full overflow-hidden bg-black md:min-h-[600px]"
     >
       {/* Background Images */}
       <div className="absolute inset-0">
@@ -53,26 +53,26 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/45" />
 
       {/* Content */}
-      <div className="relative z-10 flex h-full w-full flex-col justify-end px-5 pb-10 md:px-10 md:pb-16 lg:px-24 lg:pb-20">
+      <div className="relative z-10 flex h-full w-full flex-col justify-end px-5 pb-10 md:px-10 md:pb-16 lg:px-24 lg:pb-10">
         <div className="flex w-full flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           {/* Heading */}
-          <h1 className="max-w-[900px] text-[64px] font-light leading-[0.92] tracking-[-0.06em] text-white md:text-[100px] lg:text-[100px] xl:text-[70px]">
-            RESPECT <br />PROPOTIONS &
+          <h1 className="max-w-[900px] text-[64px] font-light leading-[0.92] tracking-normal text-white md:text-[100px] lg:text-[100px] xl:text-[100px]">
+            Respect <br />Propotions &
             <br />
-            FORM.
+            Form.
           </h1>
 
           {/* Right Label Desktop */}
           <div className="hidden items-center gap-4 pb-8 text-white lg:flex">
-            <span className="text-[18px] font-medium uppercase tracking-tight">
+            <span className="text-[11px] font-medium uppercase tracking-tight">
               Artisan
             </span>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1">
               {heroImages.map((_, index) => (
                 <span
                   key={index}
-                  className={`h-7 w-[3px] transition-all duration-500 ${
+                  className={`h-4 w-[2px] transition-all duration-500 ${
                     index === activeImage ? "bg-white" : "bg-white/35"
                   }`}
                 />

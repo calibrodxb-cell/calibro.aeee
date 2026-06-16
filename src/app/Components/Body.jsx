@@ -5,7 +5,7 @@ import { useState } from "react";
 import GetInTouch from "@/app/Components/GetInTouch";
 
 const points = [
-  "We source only the highest quality materials and parts from trusted European manufacturers — because great furniture starts with what you put into it.",
+  "We source only the highest quality materials and parts from trusted European manufacturers — great furniture starts with quality materials.",
   "Our expert team assembles every piece locally with precision and care, combining global standards with regional craftsmanship.",
   "We prioritize speed and efficiency, ensuring your furniture moves quickly from assembly to delivery — without unnecessary delays.",
 ];
@@ -22,11 +22,8 @@ export default function Body() {
       <section className="w-full bg-[#1f2321] px-5 py-10 text-white md:px-10 md:py-10 lg:px-16 xl:px-20">
         <div className="mx-auto max-w-[1280px]">
           {/* Main Heading */}
-          <h2 className="max-w-[1100px] text-[20px] font-light leading-[1.18] tracking-[-0.03em] md:text-[36px] lg:text-[40px]">
-            WE ARE CALIBRO, A CUSTOM FURNITURE FACTORY
-            PARTNER FOR ARCHITECTS, INTERIOR DESIGNERS,
-            DEVELOPERS, AND PRIVATE CLIENTS IN THE UAE
-            AND THROUGHTOUT THE GCC
+          <h2 className="max-w-[1100px] text-[20px] font-light leading-[1.25] tracking-normal md:text-[36px] lg:text-[50px]">
+            Calibro is a custom furniture factory partner for architects, interior designers, developers, and private clients in the UAE and throughout the GCC. Where timelines are respected, quality is assured, pricing remains precise, and every project is backed by warranty.
           </h2>
 
           {/* Content Grid */}
@@ -35,11 +32,8 @@ export default function Body() {
             <div>
               <div className="mb-9 h-[2px] w-full max-w-[580px] bg-white" />
 
-              <p className="max-w-[560px] text-[24px] font-light leading-[1.18] tracking-[-0.02em] md:text-[20px]">
-                WE MANUFACTURE AND DELIVER PRODUCTS FROM OUR
-                DEDICATED FURNITURE FACTORY—INCLUDING CUSTOMMADE PIECES, BESPOKE JOINERY, HANDCRAFTED TABLES,
-                STATEMENT SEATING, UPHOLSTERY, STORAGE SOLUTIONS,
-                AND LARGE-SCALE PRODUCTION.
+              <p className="max-w-[560px] text-[24px] font-light leading-[1.18] tracking-normal md:text-[28px]">
+                Based in Dubai, Calibro manufactures and delivers from our own dedicated furniture factory — custom-made pieces, bespoke joinery, handcrafted tables, statement seating, upholstery, storage solutions, and large-scale production. One factory. One accountable team. One vision carried from drawing to delivery.
               </p>
 
               {/* Points */}

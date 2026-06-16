@@ -128,7 +128,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={handleContactOpen}
-              className={`hidden cursor-pointer border px-6 py-1 text-[10px] md:text-[11px] lg:block lg:text-[11px] xl:text-[12px] uppercase tracking-[0.12em] transition-all duration-300 xl:px-6 ${
+              className={`hidden cursor-pointer border px-6 py-1 text-[8px] md:text-[8px] lg:block lg:text-[9px] xl:text-[10px] uppercase tracking-[0.12em] transition-all duration-300 xl:px-6 ${
                 scrolled
                   ? "border-[#363443] text-[#363443] hover:bg-[#363443] hover:text-white"
                   : "border-white/80 text-white hover:bg-white hover:text-[#363443]"

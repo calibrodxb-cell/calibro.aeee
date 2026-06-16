@@ -3,11 +3,11 @@ import CustomCursor from "./Components/CustomCursor"; // 👈 import added
 
 // Metadata configuration
 export const metadata = {
-  title: "Best Custom Furniture Providers in Dubai - Calibro",
+  title: "Custom Furniture Manufacturer in Dubai | Calibro",
   description:
-    "Calibro offering unparalleled interior design services in Dubai. With attention to detail and creativity, we transform your vision into reality.",
+    "Calibro is a custom furniture factory in Dubai serving architects, designers, developers & private clients across the UAE and GCC. From brief to aftercare.",
   alternates: {
-    canonical: "https://www.calibro.ae/",
+    canonical: "https://calibro.ae/",
   },
 };
 
