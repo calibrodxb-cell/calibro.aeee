@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import GetInTouch from "@/app/components/GetInTouch";
+import GetInTouch from "@/app/Components/GetInTouch";
 
 const filters = ["All", "Hospitality", "Residential", "Commercial"];
 
