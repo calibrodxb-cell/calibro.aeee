@@ -7,6 +7,15 @@ const nunito = Nunito_Sans({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
+export const metadata = {
+  title: "About Calibro | Furniture Factory in Dubai",
+  description:
+    "Calibro is a Dubai-based custom furniture factory with 18+ years of international manufacturing experience, the UAE and the wider GCC.",
+  alternates: {
+    canonical: "https://calibro.ae/about",
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nunito.variable}>

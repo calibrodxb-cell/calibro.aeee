@@ -24,7 +24,9 @@ export default function HeroSection() {
           </h1>
 
           <p className="hidden text-[11px] font-semibold uppercase tracking-[0.14em] text-white lg:block">
-            Entry, The Mission
+            Our capabilities span the entire production spectrum from woodworks and
+joinery to metalworks and upholstery all under one roof. At Calibro, customization isn't a
+feature. It's the foundation
           </p>
         </div>
       </div>

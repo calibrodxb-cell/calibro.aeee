@@ -5,9 +5,9 @@ import { useState } from "react";
 import GetInTouch from "@/app/Components/GetInTouch";
 
 const points = [
-  "We source only the highest quality materials and parts from trusted European manufacturers — great furniture starts with quality materials.",
+  "We source only the highest quality materials and parts from trusted European manufacturers great furniture starts with quality materials.",
   "Our expert team assembles every piece locally with precision and care, combining global standards with regional craftsmanship.",
-  "We prioritize speed and efficiency, ensuring your furniture moves quickly from assembly to delivery — without unnecessary delays.",
+  "We prioritize speed and efficiency, ensuring your furniture moves quickly from assembly to delivery without unnecessary delays.",
 ];
 
 export default function Body() {
@@ -33,8 +33,8 @@ export default function Body() {
               <div className="mb-9 h-[2px] w-full max-w-[580px] bg-white" />
 
               <p className="max-w-[560px] text-[24px] font-light leading-[1.18] tracking-normal md:text-[28px]">
-                Based in Dubai, Calibro manufactures and delivers from our own dedicated furniture factory — custom-made pieces, bespoke joinery, handcrafted tables, statement seating, upholstery, storage solutions, and large-scale production. One factory. One accountable team. One vision carried from drawing to delivery.
-              </p>
+               We manufacture and deliver from our dedicated furniture factory including custommade pieces, bespoke joinery, handcrafted tables, statement seating, upholstery, storage
+               solutions, and large-scale production.</p>
 
               {/* Points */}
               <div className="mt-20 grid gap-8 md:grid-cols-3 md:gap-10">
