@@ -22,7 +22,7 @@ export default function Body() {
       <section className="w-full bg-[#1f2321] px-5 py-10 text-white md:px-10 md:py-10 lg:px-16 xl:px-20">
         <div className="mx-auto max-w-[1280px]">
           {/* Main Heading */}
-          <h2 className="max-w-[1100px] text-[20px] font-light leading-[1.25] tracking-normal md:text-[36px] lg:text-[50px]">
+          <h2 className="max-w-[1100px] text-[20px] font-normal leading-[1.4] tracking-normal md:text-[36px] lg:text-[50px]">
             Calibro is a custom furniture factory partner for architects, interior designers, developers, and private clients in the UAE and throughout the GCC. Where timelines are respected, quality is assured, pricing remains precise, and every project is backed by warranty.
           </h2>
 
@@ -32,15 +32,16 @@ export default function Body() {
             <div>
               <div className="mb-9 h-[2px] w-full max-w-[580px] bg-white" />
 
-              <p className="max-w-[560px] text-[24px] font-light leading-[1.18] tracking-normal md:text-[28px]">
-               We manufacture and deliver from our dedicated furniture factory including custommade pieces, bespoke joinery, handcrafted tables, statement seating, upholstery, storage
-               solutions, and large-scale production.</p>
+              <p className="max-w-[560px] text-[24px] font-normal leading-[1.4] tracking-normal md:text-[28px]">
+                We manufacture and deliver from our dedicated furniture factory including custommade pieces, bespoke joinery, handcrafted tables, statement seating, upholstery, storage
+                solutions, and large-scale production.
+              </p>
 
               {/* Points */}
               <div className="mt-20 grid gap-8 md:grid-cols-3 md:gap-10">
                 {points.map((item, index) => (
                   <div key={index}>
-                    <p className="min-h-[88px] text-[15px] leading-[1.15] md:text-[14px] lg:text-[15px]">
+                    <p className="min-h-[88px] text-[15px] font-normal leading-[1.4] tracking-normal md:text-[14px] lg:text-[15px]">
                       {item}
                     </p>
 
@@ -67,7 +68,7 @@ export default function Body() {
           <div className="mt-24 grid gap-5 md:grid-cols-2">
             {/* WhatsApp CTA */}
             <div className="flex min-h-[260px] flex-col justify-between bg-[#363636] p-8 md:min-h-[300px] lg:p-10">
-              <h3 className="max-w-[470px] text-[25px] font-light leading-[1.15] tracking-[-0.02em] md:text-[30px]">
+              <h3 className="max-w-[470px] text-[25px] font-normal leading-[1.4] tracking-normal md:text-[30px]">
                 Share your BOQ moodboard via Whatsapp
               </h3>
 
@@ -75,7 +76,7 @@ export default function Body() {
                 href={`https://wa.me/971586045588?text=${whatsappText}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-12 flex w-fit items-center gap-20 border border-white px-5 py-3 text-[12px] font-medium uppercase tracking-wide transition-all duration-300 hover:bg-white hover:text-[#363636]"
+                className="mt-12 flex w-fit items-center gap-20 border border-white px-5 py-3 text-[12px] font-normal leading-[1.4] tracking-normal uppercase transition-all duration-300 hover:bg-white hover:text-[#363636]"
               >
                 Share
                 <span>→</span>
@@ -84,14 +85,14 @@ export default function Body() {
 
             {/* Showroom CTA */}
             <div className="flex min-h-[260px] flex-col justify-between bg-[#363636] p-8 md:min-h-[300px] lg:p-10">
-              <h3 className="max-w-[470px] text-[25px] font-light leading-[1.15] tracking-[-0.02em] md:text-[30px]">
+              <h3 className="max-w-[470px] text-[25px] font-normal leading-[1.4] tracking-normal md:text-[30px]">
                 Book your Dubai Showroom visit
               </h3>
 
               <button
                 type="button"
                 onClick={() => setContactOpen(true)}
-                className="mt-12 flex w-fit items-center gap-16 border border-white px-5 py-3 text-[12px] font-medium uppercase tracking-wide transition-all duration-300 hover:bg-white hover:text-[#363636]"
+                className="mt-12 flex w-fit items-center gap-16 border border-white px-5 py-3 text-[12px] font-normal leading-[1.4] tracking-normal uppercase transition-all duration-300 hover:bg-white hover:text-[#363636]"
               >
                 Get In Touch
                 <span>→</span>

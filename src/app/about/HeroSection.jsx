@@ -18,7 +18,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex h-full items-end px-5 pb-12 md:px-10 md:pb-16 lg:px-16 xl:px-20">
         <div className="mx-auto flex w-full max-w-[1280px] items-end justify-between gap-8">
-          <h1 className="text-[62px] font-light leading-[0.9] tracking-[-0.07em] text-white md:text-[110px] lg:text-[130px]">
+          <h1 className="text-[62px] font-light leading-[0.9] tracking-normal text-white md:text-[110px] lg:text-[130px]">
             Our
             <br />
             Legacy

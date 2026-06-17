@@ -1,5 +1,14 @@
 import "./globals.css";
-import CustomCursor from "./Components/CustomCursor"; // 👈 import added
+import CustomCursor from "./Components/CustomCursor";
+import { Nunito_Sans } from "next/font/google";
+
+// Load Nunito Sans properly with Next.js font optimization
+const nunitoSans = Nunito_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-nunito-sans",
+  display: "swap",
+});
 
 // Metadata configuration
 export const metadata = {
@@ -13,11 +22,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={nunitoSans.variable}>
       <body>
-        {/* 👇 Custom Cursor added here */}
         <CustomCursor />
-
         <main>{children}</main>
       </body>
     </html>

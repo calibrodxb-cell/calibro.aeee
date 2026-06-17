@@ -33,14 +33,14 @@ export default function Body() {
       {/* Intro */}
       <section className="px-5 py-16 md:px-10 md:py-24 lg:px-16 xl:px-20">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="max-w-[1100px] text-[38px] font-light leading-[1.08] tracking-[-0.05em] md:text-[60px] lg:text-[72px]">
+          <h2 className="max-w-[1100px] text-[38px] font-normal leading-[1.4] tracking-normal md:text-[60px] lg:text-[72px]">
             Bringing European art and design excellence — refined for the UAE
             and the wider GCC
           </h2>
 
           <div className="mt-12 h-[2px] w-full max-w-[760px] bg-white" />
 
-          <p className="mt-10 max-w-[820px] text-[22px] font-light leading-[1.25] tracking-[-0.03em] text-white/90 md:text-[32px]">
+          <p className="mt-10 max-w-[820px] text-[22px] font-normal leading-[1.4] tracking-normal text-white/90 md:text-[32px]">
             CALIBRO is the Middle Eastern division CALIBRO, a European
             procurement firm with international expertise established in 2008.
             Operating from our European headquarters and Dubai office, we
@@ -58,11 +58,11 @@ export default function Body() {
           <div>
             <div className="mb-10 h-[2px] w-full max-w-[460px] bg-white" />
 
-            <h2 className="text-[36px] font-light leading-none tracking-[-0.04em] md:text-[54px]">
+            <h2 className="text-[36px] font-normal leading-[1.4] tracking-normal md:text-[54px]">
               Approach
             </h2>
 
-            <p className="mt-12 max-w-[520px] text-[16px] leading-[1.45] text-white/80">
+            <p className="mt-12 max-w-[520px] text-[16px] font-normal leading-[1.4] tracking-normal text-white/80">
               We believe exceptional design requires flawless execution. We
               offer proof, not promises; clarity, not complexity; and
               accountability, not excuses. Above all, we respect the designer’s
@@ -99,11 +99,11 @@ export default function Body() {
           <div className="order-1 lg:order-2">
             <div className="mb-10 h-[2px] w-full max-w-[460px] bg-white" />
 
-            <h2 className="text-[36px] font-light leading-none tracking-[-0.04em] md:text-[54px]">
+            <h2 className="text-[36px] font-normal leading-[1.4] tracking-normal md:text-[54px]">
               Why now
             </h2>
 
-            <p className="mt-12 max-w-[520px] text-[16px] leading-[1.45] text-white/80">
+            <p className="mt-12 max-w-[520px] text-[16px] font-normal leading-[1.4] tracking-normal text-white/80">
               The UAE and the wider GCC demand swift service without shortcuts,
               luxury without compromise, and reliable delivery within a complex
               logistics environment. That is precisely what we have built our
@@ -117,11 +117,11 @@ export default function Body() {
       <section className="px-5 pb-20 md:px-10 md:pb-28 lg:px-16 xl:px-20">
         <div className="mx-auto grid max-w-[1280px] gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="mb-8 text-[10px] font-bold uppercase tracking-[0.16em] text-white/70">
+            <p className="mb-8 text-[10px] font-normal leading-[1.4] tracking-normal uppercase text-white/70">
               Credentials
             </p>
 
-            <h2 className="max-w-[520px] text-[38px] font-light leading-[1.05] tracking-[-0.05em] md:text-[58px]">
+            <h2 className="max-w-[520px] text-[38px] font-normal leading-[1.4] tracking-normal md:text-[58px]">
               Design professionals trust CALIBRO
             </h2>
 
@@ -138,11 +138,11 @@ export default function Body() {
           <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {credentials.map((item) => (
               <div key={item.title} className="border-y border-white py-6">
-                <h3 className="text-[22px] font-light leading-[1.1] tracking-[-0.03em]">
+                <h3 className="text-[22px] font-normal leading-[1.4] tracking-normal">
                   {item.title}
                 </h3>
 
-                <p className="mt-8 text-[13px] leading-[1.45] text-white/80">
+                <p className="mt-8 text-[13px] font-normal leading-[1.4] tracking-normal text-white/80">
                   {item.text}
                 </p>
               </div>

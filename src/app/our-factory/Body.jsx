@@ -71,7 +71,6 @@ const processItems = [
   },
 ];
 
-
 export default function Body() {
   return (
     <main className="bg-[#1f2321] text-white">
@@ -80,15 +79,15 @@ export default function Body() {
         <div className="mx-auto grid max-w-[1280px] gap-14 lg:grid-cols-[0.85fr_1.15fr]">
           {/* Left */}
           <div>
-            <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.16em] text-white/70">
+            <p className="mb-5 text-[10px] font-normal leading-[1.4] tracking-normal uppercase text-white/70">
               Complete Services
             </p>
 
-            <h2 className="max-w-[420px] text-[38px] font-light leading-[0.95] tracking-[-0.04em] md:text-[58px]">
-             Raising the standard for furniture in the UAE
+            <h2 className="max-w-[420px] text-[38px] font-normal leading-[1.4] tracking-normal md:text-[58px]">
+              Raising the standard for furniture in the UAE
             </h2>
 
-            <p className="mt-8 max-w-[390px] text-[15px] leading-[1.4] text-white/85 uppercase">
+            <p className="mt-8 max-w-[390px] text-[15px] font-normal leading-[1.4] tracking-normal text-white/85 uppercase">
               Every piece we produce can be tailored to your exact vision materials, finishes, colours,
               dimensions, and detailing. Whether it's wood, metal, or fabric, we operate with the speed and
               reliability of a modern factory while keeping the craftsmanship of a boutique workshop.
@@ -107,28 +106,28 @@ export default function Body() {
           {/* Right */}
           <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {serviceItems.map((item) => (
-  <div key={item.title} className="border-t border-white pt-5">
-    {/* Title */}
-    <h3 className="min-h-[58px] text-[18px] font-light leading-tight">
-      {item.title}
-    </h3>
+              <div key={item.title} className="border-t border-white pt-5">
+                {/* Title */}
+                <h3 className="min-h-[58px] text-[18px] font-normal leading-[1.4] tracking-normal">
+                  {item.title}
+                </h3>
 
-    {/* Image */}
-    <div className="relative mt-5 h-[190px] w-full overflow-hidden">
-      <Image
-        src={item.image}
-        alt={item.title}
-        fill
-        className="object-cover transition duration-500 hover:scale-105"
-      />
-    </div>
+                {/* Image */}
+                <div className="relative mt-5 h-[190px] w-full overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition duration-500 hover:scale-105"
+                  />
+                </div>
 
-    {/* Description */}
-    <p className="mt-5 text-[13px] leading-[1.6] text-white/80">
-      {item.description}
-    </p>
-  </div>
-))}
+                {/* Description */}
+                <p className="mt-5 text-[13px] font-normal leading-[1.4] tracking-normal text-white/80">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -151,41 +150,44 @@ export default function Body() {
       <section className="px-5 py-16 md:px-10 md:py-24 lg:px-16 xl:px-20">
         <div className="mx-auto grid max-w-[1280px] gap-12 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
-            <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.16em] text-white/70">
+            <p className="mb-5 text-[10px] font-normal leading-[1.4] tracking-normal uppercase text-white/70">
               How it works
             </p>
 
-            <h2 className="text-[40px] font-light uppercase leading-[0.95] tracking-[-0.04em] md:text-[45px]">
+            <h2 className="text-[40px] font-normal uppercase leading-[1.4] tracking-normal md:text-[45px]">
               Factory stages — process flow
             </h2>
-            <p className="uppercase mt-10">We offer complete design flexibility for architects, designers, developers, and clients who don't settle for off-the-shelf solutions. With fast delivery and global shipping, Calibro furniture is made in the UAE and delivered almost anywhere in the world built to stand out, built to last.</p>
+
+            <p className="mt-10 font-normal leading-[1.4] tracking-normal uppercase">
+              We offer complete design flexibility for architects, designers, developers, and clients who don't settle for off-the-shelf solutions. With fast delivery and global shipping, Calibro furniture is made in the UAE and delivered almost anywhere in the world built to stand out, built to last.
+            </p>
           </div>
 
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {processItems.map((item, index) => (
-  <div
-    key={index}
-    className="flex min-h-[220px] flex-col justify-between border-b border-white pb-6"
-  >
-    <div>
-      <span className="text-[64px] font-light">
-        {index + 1}
-      </span>
+              <div
+                key={index}
+                className="flex min-h-[220px] flex-col justify-between border-b border-white pb-6"
+              >
+                <div>
+                  <span className="text-[64px] font-normal leading-[1.4] tracking-normal">
+                    {index + 1}
+                  </span>
 
-      <h3 className="mt-4 text-[18px] font-light uppercase">
-        {item.title}
-      </h3>
+                  <h3 className="mt-4 text-[18px] font-normal leading-[1.4] tracking-normal uppercase">
+                    {item.title}
+                  </h3>
 
-      <p className="mt-4 text-[13px] leading-[1.5] text-white/80">
-        {item.description}
-      </p>
-    </div>
-  </div>
-))}
+                  <p className="mt-4 text-[13px] font-normal leading-[1.4] tracking-normal text-white/80">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
 
             <div className="flex items-end">
-              <h3 className="text-[22px] font-light uppercase leading-tight">
-               Visit Us Today!
+              <h3 className="text-[22px] font-normal uppercase leading-[1.4] tracking-normal">
+                Visit Us Today!
               </h3>
             </div>
           </div>
@@ -202,78 +204,82 @@ export default function Body() {
         />
       </section>
 
-     {/* Why Choose */}
-<section className="px-5 py-16 md:px-10 md:py-24 lg:px-16 xl:px-20">
-  <div className="mx-auto grid max-w-[1280px] gap-14 lg:grid-cols-[0.85fr_1.15fr]">
-    <div>
-      <h2 className="text-[38px] font-light md:text-[54px]">
-        Why choose
-        <br />
-        CALIBRO
-      </h2>
+      {/* Why Choose */}
+      <section className="px-5 py-16 md:px-10 md:py-24 lg:px-16 xl:px-20">
+        <div className="mx-auto grid max-w-[1280px] gap-14 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <h2 className="text-[38px] font-normal leading-[1.4] tracking-normal md:text-[54px]">
+              Why choose
+              <br />
+              CALIBRO
+            </h2>
 
-      <p className="mt-6 text-[13px] text-white/80">
-        Trusted by professionals and private clients throughout Europe, the UAE, and across the wider GCC. We are Calibro a custom furniture factory partner for architects, interior designers, developers, and private clients, where timelines are respected, quality is assured, pricing remains precise, and every project is backed by warranty.
-      </p>
-    </div>
+            <p className="mt-6 text-[13px] font-normal leading-[1.4] tracking-normal text-white/80">
+              Trusted by professionals and private clients throughout Europe, the UAE, and across the wider GCC. We are Calibro a custom furniture factory partner for architects, interior designers, developers, and private clients, where timelines are respected, quality is assured, pricing remains precise, and every project is backed by warranty.
+            </p>
+          </div>
 
-    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-      {[
-        {
-          title: "Single Point of Accountability",
-          description:
-            "One team manages your entire procurement journey with transparent progress updates.",
-        },
-        {
-          title: "Productive Risk Management",
-          description:
-            "We anticipate lead times, programme-phasing constraints, shipping risks, and installation logistics before they become problems.",
-        },
-        {
-          title: "Specification-Ready Alternatives",
-          description:
-            "When products are unavailable, we provide equivalent options that maintain your design intent, quality standards, and budget.",
-        },
-        {
-          title: "Dynamic Communication",
-          description:
-            " Real-time progress updates, revised timelines when needed, and transparent issue resolution",
-        },
-        {
-          title: "Comprehensive Aftercare",
-          description:
-            " Post-installation support and warranty management handled by our team, not offloaded to you or your client.",
-        },
-        {
-          title: "UAE and GCC Expertise",
-          description:
-            "18+ years of international manufacturing experience, now locally based, with a deep understanding of UAE customs, authority approvals, and project-delivery standards.",
-        },
-      ].map((item) => (
-        <div key={item.title} className="border-t border-white pt-5">
-          <h3 className="text-[15px] font-light">{item.title}</h3>
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Single Point of Accountability",
+                description:
+                  "One team manages your entire procurement journey with transparent progress updates.",
+              },
+              {
+                title: "Productive Risk Management",
+                description:
+                  "We anticipate lead times, programme-phasing constraints, shipping risks, and installation logistics before they become problems.",
+              },
+              {
+                title: "Specification-Ready Alternatives",
+                description:
+                  "When products are unavailable, we provide equivalent options that maintain your design intent, quality standards, and budget.",
+              },
+              {
+                title: "Dynamic Communication",
+                description:
+                  " Real-time progress updates, revised timelines when needed, and transparent issue resolution",
+              },
+              {
+                title: "Comprehensive Aftercare",
+                description:
+                  " Post-installation support and warranty management handled by our team, not offloaded to you or your client.",
+              },
+              {
+                title: "UAE and GCC Expertise",
+                description:
+                  "18+ years of international manufacturing experience, now locally based, with a deep understanding of UAE customs, authority approvals, and project-delivery standards.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="border-t border-white pt-5">
+                <h3 className="text-[15px] font-normal leading-[1.4] tracking-normal">
+                  {item.title}
+                </h3>
 
-          <p className="mt-4 text-[12px] leading-[1.5] text-white/80">
-            {item.description}
-          </p>
+                <p className="mt-4 text-[12px] font-normal leading-[1.4] tracking-normal text-white/80">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
+
       {/* Final Section */}
       <section className="px-5 py-16 md:px-10 md:py-24 lg:px-16 xl:px-20">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="text-[32px] font-light md:text-[48px]">
-           Global standards. Regional craftsmanship.          </h2>
+          <h2 className="text-[32px] font-normal leading-[1.4] tracking-normal md:text-[48px]">
+            Global standards. Regional craftsmanship.
+          </h2>
 
-          <p className="mt-6 max-w-[700px] text-[15px] leading-[1.6] text-white/85">
+          <p className="mt-6 max-w-[700px] text-[15px] font-normal leading-[1.4] tracking-normal text-white/85">
             Great furniture starts with what you put into it. We source only the highest-quality materials and
             parts from trusted European manufacturers, then assemble every piece locally with precision and
-           care. From our dedicated Dubai factory, our capabilities span the entire production spectrum woodworks and joinery, metalworks and fabrication, upholstery and soft furnishings, and custom
-           finishing all under one roof. <br /><br />
-           The result is a single, accountable partner who manages every phase from brief to aftercare with
-transparency, precision, and disciplined timelines.
+            care. From our dedicated Dubai factory, our capabilities span the entire production spectrum woodworks and joinery, metalworks and fabrication, upholstery and soft furnishings, and custom
+            finishing all under one roof. <br /><br />
+            The result is a single, accountable partner who manages every phase from brief to aftercare with
+            transparency, precision, and disciplined timelines.
           </p>
         </div>
       </section>

@@ -18,13 +18,11 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex h-full items-end px-5 pb-12 md:px-10 md:pb-16 lg:px-16 xl:px-20">
         <div className="mx-auto flex w-full max-w-[1280px] items-end justify-between gap-8">
-          <h1 className="text-[56px] font-light uppercase leading-[0.9] tracking-[-0.06em] text-white md:text-[100px] lg:text-[120px]">
-            Calibro
-            <br />
-            Art
+          <h1 className="text-[56px] font-light uppercase leading-[0.9] tracking-normal text-white md:text-[100px] lg:text-[120px]">
+            SERVICES
           </h1>
 
-          <p className="hidden text-[11px] font-semibold uppercase tracking-[0.14em] text-white lg:block">
+          <p className="hidden text-[11px] font-semibold uppercase tracking-normal text-white lg:block">
             Restaurant Nokoshi
           </p>
         </div>

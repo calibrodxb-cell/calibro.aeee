@@ -4,34 +4,30 @@ import Link from "next/link";
 export default function Footer() {
   const exploreLinks = [
     {
-      name: "Home",
+      name: "HOME",
       href: "/",
     },
     {
-      name: "Our Factory",
+      name: "OUR FACTORY",
       href: "/our-factory",
     },
     {
-      name: "Projects",
-      href: "/projects",
+      name: "SERVICES",
+      href: "/services",
     },
     {
-      name: "Calibro Art",
-      href: "/calibro-art",
-    },
-    {
-      name: "About",
+      name: "ABOUT",
       href: "/about",
     },
   ];
 
   const legalLinks = [
     {
-      name: "Terms & Conditions",
+      name: "TERMS & CONDITIONS",
       href: "/terms-conditions",
     },
     {
-      name: "Privacy Policy",
+      name: "PRIVACY POLICY",
       href: "/privacy-policy",
     },
   ];
@@ -45,14 +41,16 @@ export default function Footer() {
           {/* Left Column */}
           <div className="flex flex-col justify-between gap-16">
             <div>
-              <h3 className="text-[22px] font-light">Newsletter</h3>
+              <h3 className="text-[22px] font-normal leading-[1.4] tracking-normal">
+                Newsletter
+              </h3>
 
-              <p className="mt-5 max-w-[300px] text-[14px] font-semibold leading-[1.15]">
+              <p className="mt-5 max-w-[300px] text-[14px] font-normal leading-[1.4] tracking-normal">
                 Subscribe for project highlights, new brand partnerships,
                 artist collaborations, and Dubai showroom updates.
               </p>
 
-              <button className="mt-7 flex w-fit items-center gap-10 border border-white px-4 py-3 text-[12px] font-bold uppercase transition-all duration-300 hover:bg-white hover:text-[#1f2321]">
+              <button className="mt-7 flex w-fit items-center gap-10 border border-white px-4 py-3 text-[12px] font-normal leading-[1.4] tracking-normal uppercase transition-all duration-300 hover:bg-white hover:text-[#1f2321]">
                 Join our newsletter <span>→</span>
               </button>
             </div>
@@ -68,7 +66,7 @@ export default function Footer() {
 
           {/* Middle Column */}
           <div className="lg:pl-10">
-            <h4 className="mb-6 text-[12px] font-bold uppercase">
+            <h4 className="mb-6 text-[12px] font-normal leading-[1.4] tracking-normal uppercase">
               Explore
             </h4>
 
@@ -77,7 +75,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-[24px] font-light transition-all duration-300 hover:text-white/60"
+                    className="text-[24px] font-normal leading-[1.4] tracking-normal transition-all duration-300 hover:text-white/60"
                   >
                     {item.name}
                   </Link>
@@ -90,7 +88,7 @@ export default function Footer() {
           <div className="flex flex-col gap-10">
             {/* Legal */}
             <div>
-              <h4 className="mb-6 text-[12px] font-bold uppercase">
+              <h4 className="mb-6 text-[12px] font-normal leading-[1.4] tracking-normal uppercase">
                 Legal
               </h4>
 
@@ -99,7 +97,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
+                      className="text-[14px] font-normal leading-[1.4] tracking-normal transition-all duration-300 hover:text-white/60"
                     >
                       {item.name}
                     </Link>
@@ -110,11 +108,11 @@ export default function Footer() {
 
             {/* Contact */}
             <div>
-              <h4 className="mb-6 text-[12px] font-bold uppercase">
+              <h4 className="mb-6 text-[12px] font-normal leading-[1.4] tracking-normal uppercase">
                 Contact
               </h4>
 
-              <ul className="space-y-4 text-[14px] font-semibold">
+              <ul className="space-y-4 text-[14px] font-normal leading-[1.4] tracking-normal">
                 <li>
                   <a
                     href="tel:+971586045588"
@@ -137,7 +135,7 @@ export default function Footer() {
 
             {/* Social */}
             <div>
-              <h4 className="mb-6 text-[12px] font-bold uppercase">
+              <h4 className="mb-6 text-[12px] font-normal leading-[1.4] tracking-normal uppercase">
                 Follow Us
               </h4>
 
@@ -147,7 +145,7 @@ export default function Footer() {
                     href="https://instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
+                    className="text-[14px] font-normal leading-[1.4] tracking-normal transition-all duration-300 hover:text-white/60"
                   >
                     Instagram
                   </a>
@@ -158,7 +156,7 @@ export default function Footer() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[14px] font-semibold transition-all duration-300 hover:text-white/60"
+                    className="text-[14px] font-normal leading-[1.4] tracking-normal transition-all duration-300 hover:text-white/60"
                   >
                     LinkedIn
                   </a>
@@ -170,7 +168,7 @@ export default function Footer() {
 
         <div className="h-[2px] w-full bg-white" />
 
-        <div className="flex flex-col gap-4 py-8 text-[13px] font-semibold uppercase md:flex-row md:justify-between">
+        <div className="flex flex-col gap-4 py-8 text-[13px] font-normal leading-[1.4] tracking-normal uppercase md:flex-row md:justify-between">
           <p>
             1, Jebel Ali Industrial Area, 47th Street, Dubai, United Arab Emirates
           </p>
