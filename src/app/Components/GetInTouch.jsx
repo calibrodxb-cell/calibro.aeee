@@ -67,7 +67,7 @@ export default function GetInTouch({ open, onClose }) {
   };
 
   const whatsappText = encodeURIComponent(
-    "Hello TRIKA ARABIA team, I would like to connect with you."
+    "Hello Calibro team, I would like to connect with you."
   );
 
   return (

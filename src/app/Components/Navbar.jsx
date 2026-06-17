@@ -100,7 +100,7 @@ export default function Navbar() {
             >
               <Image
                 src={scrolled ? "/images/logo-b.png" : "/images/logo-w.png"}
-                alt="Trika Arabia Logo"
+                alt="Calibro Logo"
                 width={260}
                 height={90}
                 priority
