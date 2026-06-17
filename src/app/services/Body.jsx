@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import GetInTouch from "../components/GetInTouch";
+import GetInTouch from "../Components/GetInTouch";
 
 const workflow = [
   "Briefing & Budget",
