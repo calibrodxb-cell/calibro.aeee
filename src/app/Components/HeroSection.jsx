@@ -57,7 +57,7 @@ export default function HeroSection() {
         <div className="flex w-full flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           {/* Heading */}
           <h1 className="max-w-[900px] text-[64px] font-light leading-[0.92] tracking-normal text-white md:text-[100px] lg:text-[100px] xl:text-[100px]">
-            Respect <br />Propotions &
+            Respect <br />Proportions &
             <br />
             Form.
           </h1>
