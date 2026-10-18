@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import ProductDetail from '../../../pages/ProductDetail';
+import ProductDetail from '../../../views/ProductDetail';
 import { PRODUCTS } from '../../../data/products';
 
 export const dynamicParams = false;

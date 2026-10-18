@@ -1,4 +1,4 @@
-import Projects from '../../pages/Projects';
+import Projects from '../../views/Projects';
 
 export const metadata = {
   title: 'Bespoke Furniture Projects in Dubai',

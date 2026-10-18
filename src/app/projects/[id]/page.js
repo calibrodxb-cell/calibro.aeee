@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import ProjectDetail from '../../../pages/ProjectDetail';
+import ProjectDetail from '../../../views/ProjectDetail';
 import { PROJECTS } from '../../../data/projects';
 
 export const dynamicParams = false;
